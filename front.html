@@ -12,55 +12,11 @@
     </div>
     <div class="bemVindo">
         <p>Bem-vindo</p>
-        <a class='btNovaReceita' onclick="mostrarModalCadastro();">Nova Receita</a>
+        <a class='btNovaReceita' onclick="modalCadastroLimpo();">Nova Receita</a>
         <a class='btConsultarReceitas' onclick="consultarReceitas();">Consultar Receitas</a>
     </div>
-    <div id="modalCadastro">
-        <a onClick="fecharModalCadastro();"><img id='fechar' class="icon" src="./assets/close.svg"></a>
-        <p>Cadastro de Receita</p>
-        <div class="divForm">
-            <p>Nome</p>
-            <input class="formInput" type="text" id="formNome" name="nome">
-        </div>
-        <div class="divForm">
-            <p>Ingredientes</p>
-            <input class="formInput" type="text" id="formIngredientes" name="ingredientes">
-            <a onclick="adicionarIngrediente();" title="Adicionar Ingrediente">
-                <img id='addIngrediente' class="icon" src="./assets/adicionar.svg">
-            </a>
-            <a onclick="limparIngredientes();" title="Limpar Lista">
-                <img id='limparIngredientes' class="icon" src="./assets/remover.svg">
-            </a>
-        </div>
-        <div class="divForm">
-            <p>Imagem</p>
-            <input class="formInput" type="file" id="formImagem" name="imagem" accept="image/png, image/jpeg" />
-        </div>
-        <div class="formDetalhes">
-            <div class="formLista">
-                <p>Lista</p>
-                <ul id="tabelaIngredientes">
-                    <li>Leite de Texto Grande</li>
-                    <li>Água de Texto Grande</li>
-                    <li>Ovo de Texto Grande</li>
-                    <li>Açúcar de Texto Grande</li>
-                    <li>Açúcar de Texto Grande</li>
-
-                </ul>
-            </div>
-            <div class="divForm formDescricao">
-                <p>Descrição</p>
-                <textarea id="formText" name="descricao"></textarea>
-            </div>
-        </div>
-        <a class="formCadastrar">
-            Salvar
-        </a>
-    </div>
-    <div class="galeria" id="galeria">
-
-
-    </div>
+    <div id="modalCadastro" class="ocultar"></div>
+    <div class="galeria" id="galeria"></div>
 </body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

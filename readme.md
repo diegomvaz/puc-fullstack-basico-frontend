@@ -8,3 +8,7 @@ Foi criado um app para cadastro de Receitas de Comida
 ## Como executar
 
 Basta fazer o download do projeto e abrir o arquivo index.html no seu browser.
+
+## Link para o vídeo de demonstração
+
+https://youtu.be/lGuoYDfWnFY

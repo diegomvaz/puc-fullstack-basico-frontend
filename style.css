@@ -1,0 +1,312 @@
+body {
+    margin: 0;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+
+}
+
+.header {
+    position: fixed;
+    background-color: #4651A1;
+    width: 100%;
+    top: 0;
+    height: 5rem;
+    z-index: 2;
+
+}
+
+.titulo {
+    margin-left: 5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 0rem;
+    font-family: "Playwrite AU NSW"
+}
+
+.bemVindo {
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    top: 7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    padding-left: 5rem;
+    background-color: white;
+    box-shadow: 0px 0px 2px 1.5px lightgray;
+}
+
+.btNovaReceita {
+    border: 0px #1E90FF;
+    margin-left: 5rem;
+    border-radius: 45px;
+    color: white;
+    padding: 0.6rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #4651A1;
+    box-shadow: 0px 0px 4px 1.5px lightgray;
+}
+
+.btConsultarReceitas {
+    border: 0px #1E90FF;
+    margin-left: 5rem;
+    border-radius: 45px;
+    color: white;
+    padding: 0.6rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #4651A1;
+    box-shadow: 0px 0px 4px 1.5px lightgray;
+}
+
+.btNovaReceita:hover {
+    cursor: pointer;
+}
+
+.btConsultarReceitas:hover {
+    cursor: pointer;
+}
+
+#modalCadastro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 80%;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1.5px lightgray;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+
+#modalCadastro p {
+    font-size: 1rem;
+    color: rgb(62, 62, 62);
+}
+
+.mostrar {
+    display: block;
+}
+
+.ocultar {
+    display: none;
+}
+
+#fechar {
+    width: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+#addIngrediente {
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    left: 21.1rem;
+    top: 0.7rem;
+    filter: invert(48%) sepia(54%) saturate(4212%) hue-rotate(193deg) brightness(102%) contrast(101%);
+    cursor: pointer;
+}
+
+#limparIngredientes {
+    width: 1.7rem;
+    height: 1.7rem;
+    position: absolute;
+    left: 22.9rem;
+    top: 0.75rem;
+    filter: invert(40%) sepia(97%) saturate(3859%) hue-rotate(342deg) brightness(94%) contrast(89%);
+    cursor: pointer;
+}
+
+.divForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+
+}
+
+.formInput {
+    border: 1px solid grey;
+    border-radius: 45px;
+    position: absolute;
+    left: 10rem;
+    top: 0.6rem;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+}
+
+#formNome {
+    width: 25rem;
+}
+
+#formImagem {
+    border: none;
+    border-radius: 0;
+}
+
+#formText {
+    width: 23rem;
+    height: 13rem;
+    resize: none;
+    border-radius: 0;
+    font-size: 0.8rem;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+.formDescricao {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formDetalhes {
+    display: flex;
+    flex-direction: row;
+}
+
+.formLista {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.8rem;
+
+}
+
+#tabelaIngredientes li {
+    margin-left: -1.5rem;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+#tabelaIngredientes {
+    margin-top: 0;
+    width: 11rem;
+    overflow: auto;
+    max-height: 15rem;
+    overflow-x: hidden;
+
+}
+
+.galeria {
+    position: absolute;
+    top: 11rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.formCadastrar {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    color: white;
+    font-weight: bold;
+    border-radius: 45px;
+    transform: translate(-50%, -50%);
+    padding: 1rem 4rem;
+    background-color: #4651A1;
+    box-shadow: 0px 0px 3px 1.5px lightgray;
+}
+
+.formCadastrar:hover {
+    cursor: pointer;
+}
+
+.card {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border: 1px white;
+    margin: 1rem;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px 1.5px lightgray;
+    position: relative
+}
+
+.cardTitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(62, 62, 62);
+}
+
+.divImg {
+    width: 50%;
+    height: 50%;
+    background: #E6E7ED;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.imagemComida {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.botoes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.btCard {
+    width: 1.8rem;
+    height: 1.8rem;
+    border: none;
+    background-color: white;
+}
+
+.btCard:hover {
+    cursor: pointer;
+}
+
+
+.like {
+    width: 100%;
+    filter: invert(40%) sepia(97%) saturate(3859%) hue-rotate(342deg) brightness(94%) contrast(89%);
+}
+
+.icon {
+    width: 100%;
+    filter: invert(71%) sepia(0%) saturate(0%) hue-rotate(134deg) brightness(88%) contrast(83%);
+}
+
+#editar:hover {
+    filter: invert(48%) sepia(54%) saturate(4212%) hue-rotate(193deg) brightness(102%) contrast(101%);
+}
+
+#like:hover {
+    filter: invert(40%) sepia(97%) saturate(3859%) hue-rotate(342deg) brightness(94%) contrast(89%);
+}
+
+#excluir:hover {
+    filter: invert(67%) sepia(43%) saturate(1440%) hue-rotate(354deg) brightness(98%) contrast(94%);
+}
